@@ -1,2 +1,8 @@
+# Security
+.env
+.secrets/
+*.key
+*.pem
+
 *.swp
 .DS_Store

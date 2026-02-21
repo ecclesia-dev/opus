@@ -1,0 +1,4 @@
+#!/bin/sh
+# opus — wrapper to invoke opus.sh from the same directory
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+exec "$SCRIPT_DIR/opus.sh" "$@"

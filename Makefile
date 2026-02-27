@@ -13,4 +13,7 @@ uninstall:
 	rm -f $(DESTDIR)$(BINDIR)/opus
 	rm -rf $(DESTDIR)$(DATADIR)
 
-.PHONY: install uninstall
+.PHONY: install uninstall hooks
+
+hooks:
+	sh scripts/install-hooks.sh

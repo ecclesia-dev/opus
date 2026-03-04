@@ -22,9 +22,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Complete rewrite of all 8 hours with proper data file parsing
 - Day-of-week psalm rotation for all hours
 
-### Credits
-Built by Jerome.
-
 ## [0.1.0] - 2026-03-03
 
 ### Added
@@ -33,6 +30,3 @@ Built by Jerome.
 - GitHub Actions CI workflow
 - Pre-push hook auto-install script
 - Security gitignore patterns
-
-### Credits
-Built by Jerome. Reviewed by Bellarmine.

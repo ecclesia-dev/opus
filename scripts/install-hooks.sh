@@ -1,6 +1,6 @@
 #!/bin/sh
 # install-hooks.sh — installs pre-push safety hook for ecclesia-dev repos
-# Maintained by: Albert (ecclesia-dev DevOps)
+# Maintained by: ecclesia-dev DevOps
 
 set -e
 

@@ -2,7 +2,7 @@
 
 **Pray the Traditional Divine Office from your terminal.**
 
-`7 Canonical Hours · 1962 Rubrics · 150 Psalms · POSIX Shell`
+`8 Canonical Hours · 1962 Rubrics · 150 Psalms · POSIX Shell`
 
 A command-line tool for praying the Divine Office (Breviary) according to the 1962 rubrics — the traditional Roman Rite as codified under Pope John XXIII. Outputs the proper hymns, psalms, antiphons, responsories, and prayers for each canonical hour based on the day of the week and liturgical season.
 
@@ -65,13 +65,22 @@ Without arguments, `opus` auto-detects the current hour based on the time of day
 
 | Hour | Time | Command |
 |------|------|---------|
-| Lauds | ~6 AM | `opus lauds` |
-| Prime | ~7 AM | `opus prime` |
-| Terce | ~9 AM | `opus terce` |
-| Sext | ~12 PM | `opus sext` |
-| None | ~3 PM | `opus none` |
-| Vespers | ~6 PM | `opus vespers` |
-| Compline | ~9 PM | `opus compline` |
+| Matins | midnight–5 AM | `opus matins` |
+| Lauds | 5–7 AM | `opus lauds` |
+| Prime | 7–9 AM | `opus prime` |
+| Terce | 9–11 AM | `opus terce` |
+| Sext | 11 AM–1 PM | `opus sext` |
+| None | 1–3 PM | `opus none` |
+| Vespers | 3–7 PM | `opus vespers` |
+| Compline | 7 PM–midnight | `opus compline` |
+
+### Options
+
+```
+opus --date 2026-12-25 vespers   # Any hour for a specific date
+opus --english                    # English only (default)
+opus --latin                      # Latin only (planned)
+```
 
 ### Piping
 
